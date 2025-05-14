@@ -49,5 +49,48 @@ MetroWeather/
 └── README.md              # Project documentation
 
 
+```
+
+## ⚙️ Installation
+
+### 🔹 Frontend Setup (Vite + React)
+
+```bash
+# Navigate to the frontend folder
+cd frontend
+
+# Install dependencies
+npm install
+
+# Create a .env file and add your OpenCage API key
+VITE_API_KEY=your-api-key-here
+
+# Start the development server
+npm run dev
+
+```
+### 🔹 Backend Setup (Express.js)
+
+```bash
+# Navigate to the backend folder
+cd backend
+
+# Install dependencies
+npm install
+
+# Create a .env file and add your OpenWeather API key
+API_KEY=your-api-key-here
+MONGODB_CLIENT=your-mongodb-connection-string-here
+
+# Start the backend server
+npm start
+```
+## 🌐 API Details
+The app uses the OpenWeather API to fetch real-time weather information.
+### Example API Call:
+```bash 
+fetch(`https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`);
+```
+
 
 
